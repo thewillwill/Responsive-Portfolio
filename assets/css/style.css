@@ -1,0 +1,323 @@
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	background-image: url("../images/paper_background.png");
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+	color: #333333;
+}
+
+/*Header and Navigation Bar*/
+
+#nav-bar-container {
+	overflow: hidden;
+	position: fixed;
+	z-index: 1;
+	height: 4em;
+	top: 0;
+	width: 100%;
+	float: left;
+	margin: 0px;
+	background-color: white;‹€⁄€
+	border-bottom: solid 2px #cccccc;
+}
+
+#nav-bar {
+	max-width: 960px;
+	margin: 0 auto;
+	height: 100%;
+}
+
+#name-heading {
+	float: left;
+	padding: 2em;
+	background-color: #4aaaa5;
+	margin: 0;
+	text-align: center;
+    height: 100%;
+}
+
+/*Menu Positioning*/
+nav {
+	float: right;
+	padding: 2em;
+}
+
+.nav-menu {
+	color: #DDD;
+	list-style-type: none;
+    margin: 0;
+    padding: 0
+}
+
+
+
+
+/*Menu Styling*/
+
+.menu-item {
+	display: inline;	
+}
+
+li a{
+	color: grey;
+	font-size: 12px;
+	margin-right: 5px;
+	text-decoration: none;
+}
+li {
+	padding: 0 5px;
+	vertical-align: middle;
+	border-right: 1px solid #bbb;
+    border-right: 1px solid #bbb;
+}
+
+li:last-child {
+    border-right: none;
+}
+
+li a:hover {
+	color: red;
+}
+
+li a .active {
+	background-color: grey;	
+}
+
+/*'Standard' HTML Elements Styling*/
+
+h1, h2, h3 {
+	font-family: 'Georgia', Times, Times New Roman, serif;
+}
+
+p {
+	color: #777777;
+	font-size: px;
+	line-height: 150%;
+}
+
+h1 {
+	color: white;
+	font-size: 28px;
+	font-variant: small-caps;
+	letter-spacing: 1px;
+}
+
+h2 {
+	font-size: 24px;
+}
+
+h2, h3 {
+	color: #4aaaa5;
+}
+
+h3 {
+	font-size: 18px;
+}
+
+
+/*Content and Side Bar*/
+
+.container {
+	margin: 5em auto 2em auto; /*start content below hovering menu and finish before hovering footer*/
+}
+
+#main-section, #right-section, #bio-image {
+	float: left;
+}
+
+#bio-image {
+	width: 200px;
+	margin: 0 30px 0 0;
+	border-bottom: solid grey 2px;
+}
+
+#main-section {
+	box-sizing: border-box;
+	background-color: #fff;
+	padding: 25px;
+}
+
+p::first-letter {
+	font-size: 24px;
+	line-height: 150%
+	letter-spacing: 150%d;
+}
+
+#right-section {
+	box-sizing: border-box;
+	line-height: 1.5;
+	padding: 25px;
+
+	background-color: #fff;
+}
+
+hr.line {
+	height: 2px;
+	border: 0 none;
+	background-color: grey;
+	margin: 5px 0 25px 0;
+}
+
+
+/*Footer Styling*/
+#footer-container {
+	height: 5em;
+}
+
+#footer {    
+	position: fixed; /* Set the navbar to fixed position */
+	bottom: 0; /* Position the navbar at the bottom of the page */
+	width: 100%; 
+	border-top: 5px solid #4aaaa5;
+	background-color: #666666;
+	height: 4em; 
+	text-align: center;
+}
+
+
+
+
+#copywright-text {
+	width: 100%; /*set width of div in order to center text*/
+	margin: 20px auto 0 auto;	/*center text*/
+}
+
+/*Social Icon Sizing*/
+.social-icon {
+	width: 70px;
+}
+
+/*Form Styling*/
+label {
+	color: grey;
+}
+
+textarea {
+	margin: 10px 0 15px 0;
+	width: 100%;
+}
+
+input[type=text] {
+	margin: 10px 0 15px 0;
+	width: 100%;
+	border: grey solid 1px;
+	font-size: 20px;
+}
+
+input[type=submit] {
+    border-radius: 5px;
+    border: 0;
+    padding:10px 20px;
+    background: #4aaaa5;
+    color: white;
+    font-size: 20px;
+}
+
+/*Gallery Styling*/
+
+.gallery {
+	/*width: 100%;*/
+}
+
+.gallery-item {
+	position: relative;
+	width: 40%;
+	float: left;
+	margin: 10px 5%;
+}
+
+.item-title {
+	position: absolute;
+	bottom: 10px;
+	width: 100%;
+	text-align: center;
+	background-color: #4aaaa5;
+	padding: 10px;
+	box-sizing: border-box;
+	color: white;
+}
+
+.item-title:hover {
+	position: absolute;
+	bottom: 10px;
+	width: 100%;
+	text-align: center;
+	background-color: blue;
+	padding: 10px;
+	box-sizing: border-box;
+	color: white;
+}
+
+.item-image {
+	width: 100%;
+}
+
+
+/* For mobile phones: */
+    #main-section {
+    	width: 90%;
+    	margin-left: 10px;
+    }
+    #right-section {
+    	width: 90%;
+		margin-left: 10px;
+		margin-top: 20px;
+		margin-right: 10px;
+	}
+
+	#name-heading {
+		padding: 2em 0.5em;
+		font-size: 75%;
+	}
+@media only screen and (min-width: 600px) {
+    /* For tablets: */
+    .container {
+		width: 650px;
+		margin: 8em auto 5em auto; /*start content below hovering menu and finish before hovering footer*/
+    }
+	
+	/*shrink the menu font size on smaller screen*/
+    li a {
+		color: grey;
+		font-size: 18px;
+	}
+	
+	#nav-bar-container {
+		height: 6em;
+	}
+
+    #main-section {
+    	width: 650px;
+    }
+    #right-section {
+    	width: 270px;
+	}
+
+	#name-heading {
+		padding: 2em;
+		font-size: 100%;
+	}
+
+}
+@media only screen and (min-width: 955px) {
+    /* For desktop: */
+    .container {
+		width: 960px;
+    }
+    #main-section {
+    	width: 650px;
+    }
+    #right-section {
+    	width: 270px;
+		margin-left: 30px;
+		margin-top: 0px;
+		margin-right: 0px;
+	}
+}
+	
